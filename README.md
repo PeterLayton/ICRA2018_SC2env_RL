@@ -40,7 +40,7 @@ VERSIONS = {
 }
 ```
 
-## RL算法运行例程
+## ICRA_pysc2环境运行例程
 
 <div align="center">
   <img src=images/ICRA.gif width="720px"/>
@@ -73,3 +73,9 @@ python -m main
 ```shell
 python -m main --training=False
 ```
+
+<div align="center">
+  <img src=images/sroce.png width="910px"/>
+</div>
+
+上图为此算法6000次的测试结果，平均上下限为2000分至3500分
