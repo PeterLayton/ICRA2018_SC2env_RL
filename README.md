@@ -41,11 +41,13 @@ VERSIONS = {
 ```
 
 ## RL算法运行例程
+
 <div align="center">
   <img src=images/ICRA.gif width="720px"/>
 </div>
-这个算法根据DeepMind‘s的PySC2-RL-A3C算法定义的，此为原始 [paper](https://deepmind.com/documents/110/sc2le.pdf) ,
-代码来自于一位韩国dalao [xhujoy](https://github.com/xhujoy/pysc2-agents) 的github（99.99%一样
+
+这个算法根据DeepMind‘s的PySC2-RL-A3C算法定义的，论文链接[paper](https://deepmind.com/documents/110/sc2le.pdf),
+代码来自于一位韩国dalao [xhujoy](https://github.com/xhujoy/pysc2-agents)的(99.99%一样)
 
 ### 环境
 * tensorflow(适配GPU版本)
