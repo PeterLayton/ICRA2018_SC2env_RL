@@ -1,3 +1,5 @@
+
+
 # ICRA2018_SC2env_RL
 * Mini-game map made in ICRA：v1.0
 * Starcraft 2 client version：4.0.2
@@ -20,12 +22,12 @@ Time Elapsed ( 180 seconds )
 
 ## agent information 
 The agent model comes from the siege tank model in SC2
-- 血量：均为2000HP
-- Damage：每发50HP
-- 射速：未知 (大概1秒1个吧)
-- 动作：移动，停止，攻击，选择
-- 移速：4.25 (相对现实世界来说，算是一秒走4.25米吧)
-- Score：分数计算参照ICRA规则
+- Blood volume ：均为2000HP
+- Damage：50HP 
+- 射速：未知 (大概1秒1个吧) ( Don´t really get what Rate of Fire means here)
+- Actions : Move, Stop, Attack, Select 
+- Speed：4.25 
+- Score：The score calculation refers to ICRA rules 
 
 ## Environment configuration 
 Clone the pySC2 repository and install Starcraft 2 client 
@@ -44,23 +46,24 @@ Refer bellow to run
 * https://github.com/deepmind/pysc2/issues/131 
 * https://github.com/deepmind/pysc2/commit/fee7133a9abd8f1dfc90d5e7c2884cae04283eb7
 
-既修改 **pysc2/run_configs/platforms.py** 里面的VERSIONS信息，添加
+Modify VERSIONS information in **pysc2/run_configs/platforms.py** adding : 
 ```python
 VERSIONS = { 
   "4.0.2": (59877, "B43D9EE00A363DAFAD46914E3E4AF362"),
 }
 ```
 
-## ICRA_pysc2环境运行例程
+## ICRA_pysc2 environment running procedure
 
 <div align="center">
   <img src=images/ICRA.gif width="720px"/>
 </div>
 
-这个算法根据DeepMind的PySC2-RL-A3C算法定义的，论文链接[paper](https://deepmind.com/documents/110/sc2le.pdf),
-代码来自于南开大学dalao [xhujoy](https://github.com/xhujoy/pysc2-agents)的(99.99%一样)，他的[知乎](https://zhuanlan.zhihu.com/p/29246185?group_id=890682069733232640)
 
-### 环境
+This algorithm is based on DeepMind´s PySC2-RL-A3C linked[paper](https://deepmind.com/documents/110/sc2le.pdf),
+The code comes from [xhujoy](https://github.com/xhujoy/pysc2-agents)的(99.99%一样)，他的[知乎](https://zhuanlan.zhihu.com/p/29246185?group_id=890682069733232640)
+
+### Requirements 
 * tensorflow(适配GPU版本)
 * s2clientprotocol（见上面）
 * pysc2（见上面）
@@ -70,17 +73,17 @@ pip install absl-py
 pip install tensorflow-gpu
 ```
 
-### 安装
+### Installation 
 ```shell
 git clone https://github.com/PeterLayton/ICRA2018_SC2env_RL
 cd ICRA2018_SC2env_RL
 ```
-### 测试
-输入以下指令即可开始training，大概会花上2天1夜，将产生**20G**左右的model文件，注意空间
+### Test
+Enter the following command to start training, it has taken about 3 days and might generate a 20 G model file 
 ```shell
 python -m main
 ```
-训练完成后，输入以下指令可看结果
+After the training phase is completed, enter the following instructions to see the results 
 ```shell
 python -m main --training=False
 ```
@@ -89,4 +92,4 @@ python -m main --training=False
   <img src=images/sroce.png width="910px"/>
 </div>
 
-上图为此算法6000次的测试结果，平均上下限为2000分至3500分
+The above figure shows the results of 6000 tests for this algorithm. The average upper and lower limits are  ranged from 2000 to 3500 points
