@@ -1,35 +1,46 @@
 # ICRA2018_SC2env_RL
-* ICRA地图：v1.0
-* 星际2客户端版本：4.0.2
+* Mini-game map made in ICRA：v1.0
+* Starcraft 2 client version：4.0.2
 
-## 地图信息
-默认玩家车辆出生2辆车，地图设定为3分钟，官方车全图寻找玩家车辆进行打击
-- Red Space：玩家车出生点
-- Blue Space：官方车出生点
-- Bound area：暂无设置
-- 缩放比：1：100
+## Mini-game information
 
-## agent信息
-agent模型来自SC2里的攻城坦克模型
+### Description
+The goal is that a  fully observable agent must find the other in order to start a battle 
+- Bound area：No settings : 
+- Scale ratio：1：100
+
+### Initial State 
+*   2 Hellions at at Red Space ( Agent )
+*   2 Hellions at at Blue Space 
+
+### Rewards 
+
+### End Condition
+Time Elapsed ( 180 seconds ) 
+
+## agent information 
+The agent model comes from the siege tank model in SC2
 - 血量：均为2000HP
-- 伤害值：每发50HP
+- Damage：每发50HP
 - 射速：未知 (大概1秒1个吧)
 - 动作：移动，停止，攻击，选择
 - 移速：4.25 (相对现实世界来说，算是一秒走4.25米吧)
 - Score：分数计算参照ICRA规则
 
-## 环境配置
+## Environment configuration 
+Clone the pySC2 repository and install Starcraft 2 client 
 * Pysc2：https://github.com/deepmind/pysc2
-* 星际争霸2客户端4.0.2：https://github.com/Blizzard/s2client-proto (推荐linux版本)
+* Starcraft 2 Client 4.0.2：https://github.com/Blizzard/s2client-proto (推荐linux版本)
 
-下载之后，将 **ICRA.sc2map** 放入 **StarcraftII/Maps/mini_games/** ,然后打开 **pysc2/maps/mini_games.py** 并添加地图名称 "ICRA",
-现在你就可以运行和测试这个环境了，输入下面的命令赶紧试一试吧
+Download the ICRA.sc2map file and place it in the folder StarcraftII/Maps/mini_games
+Add ICRA to the mini-games array in pysc2/maps/mini_games.py 
+For any more detailed information visit this page 
 ```bash
 $ python -m pysc2.bin.play --map ICRA
 ```
 
-## 4.0.2 version Replay的问题
-参照以下之后即可运行
+## 4.0.2 version Replay Issues
+Refer bellow to run 
 * https://github.com/deepmind/pysc2/issues/131 
 * https://github.com/deepmind/pysc2/commit/fee7133a9abd8f1dfc90d5e7c2884cae04283eb7
 
