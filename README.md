@@ -22,9 +22,9 @@ Time Elapsed ( 180 seconds )
 
 ## agent information 
 The agent model comes from the siege tank model in SC2
-- Blood volume ：均为2000HP
+- Blood volume ：both2000HP
 - Damage：50HP 
-- 射速：未知 (大概1秒1个吧) ( Don´t really get what Rate of Fire means here)
+- Rate of Fire: Unknown (Approximately 1 second 1)
 - Actions : Move, Stop, Attack, Select 
 - Speed：4.25 
 - Score：The score calculation refers to ICRA rules 
@@ -61,17 +61,18 @@ VERSIONS = {
 
 
 This algorithm is based on DeepMind´s PySC2-RL-A3C linked[paper](https://deepmind.com/documents/110/sc2le.pdf),
-The code comes from [xhujoy](https://github.com/xhujoy/pysc2-agents)的(99.99%一样)，他的[知乎](https://zhuanlan.zhihu.com/p/29246185?group_id=890682069733232640)
+The code comes from [xhujoy](https://github.com/xhujoy/pysc2-agents)(99.99%), his [knowing](https://zhuanlan.zhihu.com/p/29246185?group_id=890682069733232640)
 
 ### Requirements 
-* tensorflow(适配GPU版本)
-* s2clientprotocol（见上面）
-* pysc2（见上面）
+* tensorflow(GPU Adapted)
+* s2clientprotocol（See above）
+* pysc2（See above）
 * absl-py
 ```shell
 pip install absl-py
 pip install tensorflow-gpu
 ```
+or install via requirements.txt 
 
 ### Installation 
 ```shell
