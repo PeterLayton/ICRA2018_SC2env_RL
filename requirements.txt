@@ -1,0 +1,4 @@
+PySC2
+numpy
+tensorflow-gpu
+absl-py
