@@ -32,7 +32,7 @@ The agent model comes from the siege tank model in SC2
 ## Environment configuration 
 Clone the pySC2 repository and install Starcraft 2 client 
 * Pysc2：https://github.com/deepmind/pysc2
-* Starcraft 2 Client 4.0.2：https://github.com/Blizzard/s2client-proto (推荐linux版本)
+* Starcraft 2 Client 4.0.2：https://github.com/Blizzard/s2client-proto (Recommended linux version)
 
 Download the ICRA.sc2map file and place it in the folder StarcraftII/Maps/mini_games
 Add ICRA to the mini-games array in pysc2/maps/mini_games.py 
