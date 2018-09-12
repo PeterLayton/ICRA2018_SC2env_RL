@@ -22,8 +22,8 @@ Time Elapsed ( 180 seconds )
 
 ## agent information 
 The agent model comes from the siege tank model in SC2
-- Blood volume ：both2000HP
-- Damage：50HP 
+- Blood volume ：both 2000HP
+- Damage：50HP per shot
 - Rate of Fire: Unknown (Approximately 1 second 1)
 - Actions : Move, Stop, Attack, Select 
 - Speed：4.25 
