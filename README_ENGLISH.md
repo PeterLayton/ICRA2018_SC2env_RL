@@ -1,7 +1,6 @@
 # ICRA2018_SC2env_RL
 
 * Mini-game map made in ICRA：v1.0
-
 * Starcraft 2 client version：4.0.2
 
 ## Mini-game information

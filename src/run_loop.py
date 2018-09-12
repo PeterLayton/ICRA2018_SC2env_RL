@@ -4,11 +4,10 @@ from __future__ import print_function
 
 import time
 
-
 def run_loop(agents, env, max_frames=0):
   """A run loop to have agents and an environment interact."""
   start_time = time.time()
-
+  
   try:
     while True:
       num_frames = 0
