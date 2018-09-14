@@ -1,7 +1,8 @@
 # ICRA2018_SC2env_RL
 
-* ICRA地图：v1.0
+* ICRA地图：v1.1 (modify in editor v4.6)
 * 星际2客户端版本：4.0.2
+  * 4.6.0 at newest: pass
 
 ## 地图信息
 
