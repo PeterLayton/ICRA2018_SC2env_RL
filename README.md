@@ -18,7 +18,7 @@
 
 分数计算依照 2018 ICRA rules
 
-$$ Score = α * x + β * Y - γ * Z $$
+<a href="https://www.codecogs.com/eqnedit.php?latex=Score&space;=&space;\boldsymbol{a}&space;*&space;x&space;&plus;&space;\boldsymbol{b}&space;*&space;Y&space;-&space;\boldsymbol{c}&space;*&space;Z" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Score&space;=&space;\boldsymbol{a}&space;*&space;x&space;&plus;&space;\boldsymbol{b}&space;*&space;Y&space;-&space;\boldsymbol{c}&space;*&space;Z" title="Score = \boldsymbol{a} * x + \boldsymbol{b} * Y - \boldsymbol{c} * Z" /></a>
 
 * X 是官方智能体共减少的血量
 * Y 是剩余的时间

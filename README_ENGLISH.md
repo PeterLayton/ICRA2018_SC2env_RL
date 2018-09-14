@@ -27,7 +27,7 @@ The goal is that a fully observable agent must find the other in order to start 
 
 Score count is followed the ICRA rules
 
-$$ Score = α * x + β * Y - γ * Z $$
+<a href="https://www.codecogs.com/eqnedit.php?latex=Score&space;=&space;\boldsymbol{a}&space;*&space;x&space;&plus;&space;\boldsymbol{b}&space;*&space;Y&space;-&space;\boldsymbol{c}&space;*&space;Z" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Score&space;=&space;\boldsymbol{a}&space;*&space;x&space;&plus;&space;\boldsymbol{b}&space;*&space;Y&space;-&space;\boldsymbol{c}&space;*&space;Z" title="Score = \boldsymbol{a} * x + \boldsymbol{b} * Y - \boldsymbol{c} * Z" /></a>
 
 * X is the HP reduction of RoboMaster AI robots ( Agent ).
 * Y is the remaining time ( in seconds ) when both RoboMaster AI robots are destroyed. If the challenge time ends before both AI robots are destroyed, Y is 0.
@@ -35,7 +35,8 @@ $$ Score = α * x + β * Y - γ * Z $$
 
 ### End Condition
 
-Time Elapsed ( 180 seconds )
+* Time Elapsed ( 180 seconds )
+* Any side's robots are destroyed
 
 ## agent information
 
